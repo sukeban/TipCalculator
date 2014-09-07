@@ -63,7 +63,7 @@
         android:layout_alignLeft="@+id/btTwenty"
         android:layout_centerVertical="true"
         android:text="@string/custom_tip_text"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
         android:id="@+id/etCustom"
@@ -79,16 +79,6 @@
 
         <requestFocus />
     </EditText>
-
-    <TextView
-        android:id="@+id/txResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="43dp"
-        android:layout_toLeftOf="@+id/btTen"
-        android:text="@string/result_text"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
         android:id="@+id/button1"
@@ -117,6 +107,16 @@
         android:layout_alignBottom="@+id/etAmount"
         android:layout_toLeftOf="@+id/etAmount"
         android:text="@string/dollar_text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:text="@string/result_text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

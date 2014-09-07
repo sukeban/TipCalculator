@@ -4,19 +4,14 @@ import java.text.NumberFormat;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.text.InputFilter;
-import android.text.InputType;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class TipCalculatorActivity extends Activity {
 	
 	private EditText 		etAmount;
-	private Button  		btTwenty;
-	private Button  		btFifteen;
-	private Button  		btTen;
+	
 	private EditText 		etCustom;
 	private TextView 		txResult;
 	private NumberFormat 	numberFormat;
@@ -27,17 +22,9 @@ public class TipCalculatorActivity extends Activity {
         setContentView(R.layout.activity_tip_calculator);
         
         etAmount = (EditText)findViewById(R.id.etAmount);
-
-        btTwenty = (Button)findViewById(R.id.btTwenty);
-        btFifteen = (Button)findViewById(R.id.btFifteen);
-        btTen = (Button)findViewById(R.id.btTen);
-
         etCustom = (EditText)findViewById(R.id.etCustom);
-        
         txResult = (TextView)findViewById(R.id.txResult);
-        
         numberFormat = NumberFormat.getCurrencyInstance();
-
     }
     
     private void calculatePercent(double percent) {
