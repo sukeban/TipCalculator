@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TipCalculator</string>
+    <string name="enter_instruction_text">Enter Bill Amount</string>
+    <string name="twenty_percent_text">20%</string>
+    <string name="fifteen_percent_text">15%</string>
+    <string name="ten_percent_text">10%</string>
+    <string name="tip_amount_text">Tip Amount:</string>
+    <string name="result_text">Result</string>
+    <string name="custom_tip_text">Or Enter Tip Amount</string>
+    <string name="calculate">Calculate</string>
+    <string name="zero_text">0.00</string>
+    <string name="zero_percent_text">0</string>
+    <string name="percentText">%</string>
+    <string name="percent_text">%</string>
+    <string name="dollar_text">$</string>
+
+</resources>

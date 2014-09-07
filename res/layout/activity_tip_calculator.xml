@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/enter_instruction_text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/zero_text" />
+
+    <Button
+        android:id="@+id/btTwenty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etAmount"
+        android:layout_below="@+id/etAmount"
+        android:layout_marginTop="23dp"
+        android:onClick="calculateTwentyPercent"
+        android:text="@string/twenty_percent_text" />
+
+    <Button
+        android:id="@+id/btFifteen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btTwenty"
+        android:layout_alignBottom="@+id/btTwenty"
+        android:layout_toRightOf="@+id/btTwenty"
+        android:onClick="calculateFifteenPercent"
+        android:text="@string/fifteen_percent_text" />
+
+    <Button
+        android:id="@+id/btTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btFifteen"
+        android:layout_alignBottom="@+id/btFifteen"
+        android:layout_toRightOf="@+id/btFifteen"
+        android:onClick="calculateTenPercent"
+        android:text="@string/ten_percent_text" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btTwenty"
+        android:layout_centerVertical="true"
+        android:text="@string/custom_tip_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/etCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="17dp"
+        android:layout_toLeftOf="@+id/btTen"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/zero_percent_text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="43dp"
+        android:layout_toLeftOf="@+id/btTen"
+        android:text="@string/result_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etCustom"
+        android:layout_alignBottom="@+id/etCustom"
+        android:layout_toRightOf="@+id/textView2"
+        android:onClick="calculateCustomPercent"
+        android:text="@string/calculate" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etCustom"
+        android:layout_alignLeft="@+id/btTen"
+        android:text="@string/percent_text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etAmount"
+        android:layout_alignBottom="@+id/etAmount"
+        android:layout_toLeftOf="@+id/etAmount"
+        android:text="@string/dollar_text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
