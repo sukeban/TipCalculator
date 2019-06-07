@@ -10,8 +10,8 @@ Completed user stories:
  * [x] Required: User enters a total amount of the transaction
  * [x] Required: User selects one of three tip amounts (10%, 15%, 20%)
  * [x] Required: Upon selecting tip %, tip value is displayed as $
- * [x] Optional: Can read and write items to a file
- * [x] Optional: User can select custom tip percentage if desired
+ * [] Optional: Can read and write items to a file
+ * [] Optional: User can select custom tip percentage if desired
  
  
 Notes:
@@ -19,4 +19,4 @@ Notes:
 
 Walkthrough of all user stories:
 
-![Video Walkthrough](tipCalculator.gif)
+
